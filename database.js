@@ -1,12 +1,12 @@
 // This file simulates a JSON database of student records.
 const studentDatabase = [
   {
-    id: "SR001",
-    name: "Priya Sharma",
+    id: "AR001",
+    name: "Avinash Royal",
     course: "Full Stack Development",
     date: "September 15, 2025",
-    issuer: "Rohan Verma",
-    hasCertificate: false, // true = PDF has been uploaded
+    issuer: "Subbarayudu",
+    hasCertificate: true, // true = PDF has been uploaded
   },
   {
     id: "SR002",
@@ -33,4 +33,5 @@ const studentDatabase = [
     hasCertificate: false, // false = PDF has NOT been uploaded yet
   }
 ];
+
 
