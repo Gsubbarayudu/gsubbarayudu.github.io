@@ -70,13 +70,17 @@
             Enter your unique Student ID to find and download your certificate
             of completion.
           </p>
-          <form id="certificate-form" class="animate-on-scroll">
-            <input
-              type="text"
-              id="student-id"
-              placeholder="Enter Your Skillraace ID"
-              required
-            />
+          <form id="certificate-form" class="animate-on-scroll" novalidate>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="student-id"
+                placeholder="Enter Your Skillraace ID"
+                required
+              />
+              <div id="id-error" class="error-message"></div>
+            </div>
+
             <button type="submit" class="btn">Get Certificate</button>
           </form>
         </div>
@@ -159,4 +163,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
