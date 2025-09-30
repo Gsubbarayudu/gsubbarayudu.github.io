@@ -107,26 +107,35 @@ document.addEventListener("DOMContentLoaded", () => {
     countUpObserver.observe(achievementsSection);
   }
 
-  // --- Certificate Verification Logic  ---
+ // --- Certificate Verification Logic ---
   const certificateForm = document.getElementById("certificate-form");
   if (certificateForm) {
+    const studentIdInput = document.getElementById("student-id");
+    const errorContainer = document.getElementById("id-error");
+
     certificateForm.addEventListener("submit", function (event) {
       event.preventDefault();
 
-      const studentIdInput = document
-        .getElementById("student-id")
-        .value.trim()
-        .toUpperCase();
+      const studentIdValue = studentIdInput.value.trim().toUpperCase();
       const resultContainer = document.getElementById("certificate-result");
 
-      // Step 1: Check if the student ID exists in our database
+      if (studentIdValue === "") {
+        studentIdInput.classList.add("input-error");
+        errorContainer.textContent = "Please enter your Skillraace ID.";
+        resultContainer.innerHTML = "";
+        return;
+      }
+
+      studentIdInput.classList.remove("input-error");
+      errorContainer.textContent = "";
+      resultContainer.innerHTML = `<p>Searching...</p>`;
+
       const studentData = studentDatabase.find(
-        (student) => student.id === studentIdInput
+        (student) => student.id.toUpperCase() === studentIdValue
       );
 
       if (studentData) {
         if (studentData.hasCertificate) {
-          // This part for showing the certificate remains the same
           const certificatePath = `${studentData.id}.pdf`;
           resultContainer.innerHTML = `
                         <div class="certificate-display animate-on-scroll visible">
@@ -137,12 +146,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     `;
         } else {
-          // Error message for when the file is not yet uploaded
+          // VARIABLE from studentIdInput to studentIdValue
           resultContainer.innerHTML = `
                         <div class="highlight-box error-box animate-on-scroll visible">
                             <div class="error-cartoon">
                                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 90 A40 40 0 1 1 50 10 A40 40 0 1 1 50 90 Z" fill="#e72cf0ff"/>
+                                    <path d="M50 90 A40 40 0 1 1 50 10 A40 40 0 1 1 50 90 Z" fill="#f0f0f0"/>
                                     <circle cx="35" cy="45" r="5" fill="#333"/>
                                     <circle cx="65" cy="45" r="5" fill="#333"/>
                                     <path d="M35 70 Q50 55 65 70" stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
@@ -150,18 +159,18 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </svg>
                             </div>
                             <div class="error-text">
-                                <p><strong>Certifications Not Yet Available for ID: ${studentIdInput}</strong><br>The student record was found, but the student was not done any certifications yet. Please check back later.</p>
+                                <p><strong>Certificate Not Yet Available for ID: ${studentIdValue}</strong><br>The student record was found, but the certificate file has not been uploaded yet. Please check back later.</p>
                             </div>
                         </div>
                     `;
         }
       } else {
-        // Error message for when the ID is not found
+        // UPDATED VARIABLE from studentIdInput to studentIdValue
         resultContainer.innerHTML = `
                     <div class="highlight-box error-box animate-on-scroll visible">
                         <div class="error-cartoon">
                             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50 90 A40 40 0 1 1 50 10 A40 40 0 1 1 50 90 Z" fill="#da1efbff"/>
+                                <path d="M50 90 A40 40 0 1 1 50 10 A40 40 0 1 1 50 90 Z" fill="#f0f0f0"/>
                                 <circle cx="35" cy="45" r="5" fill="#333"/>
                                 <circle cx="65" cy="45" r="5" fill="#333"/>
                                 <path d="M35 70 Q50 55 65 70" stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
@@ -169,13 +178,11 @@ document.addEventListener("DOMContentLoaded", () => {
                             </svg>
                         </div>
                         <div class="error-text">
-                            <p><strong>No certificate found for ID: ${studentIdInput}</strong>. Please check the ID and try again. If the issue persists, contact our support team.</p>
+                            <p><strong>No certificate found for ID: ${studentIdValue}</strong>. Please check the ID and try again. If the issue persists, contact our support team.</p>
                         </div>
                     </div>
                 `;
       }
-    });
-  }
 });
 // --- NEW: Hamburger Menu Logic ---
 const hamburger = document.querySelector(".hamburger");
@@ -186,5 +193,6 @@ if (hamburger && navLinks) {
     navLinks.classList.toggle("active");
   });
 }
+
 
 
