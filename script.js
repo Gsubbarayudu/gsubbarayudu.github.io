@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (studentData) {
         if (studentData.hasCertificate) {
           // This part for showing the certificate remains the same
-          const certificatePath = `certificates/${studentData.id}.pdf`;
+          const certificatePath = `${studentData.id}.pdf`;
           resultContainer.innerHTML = `
                         <div class="certificate-display animate-on-scroll visible">
                             <h3>Certificate for ${studentData.name}</h3>
@@ -186,4 +186,5 @@ if (hamburger && navLinks) {
     navLinks.classList.toggle("active");
   });
 }
+
 
