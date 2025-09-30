@@ -31,5 +31,6 @@ const studentDatabase = [
     date: "July 19, 2025",
     issuer: "Anjali Gupta",
     hasCertificate: false, // false = PDF has NOT been uploaded yet
-  },
+  }
 ];
+
