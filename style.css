@@ -588,3 +588,88 @@ section {
   text-align: left;
 }
 /* --- END NEW STYLES --- */
+
+/* --- NEW: Responsive Design & Mobile Styles --- */
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.hamburger .material-symbols-outlined {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+
+/* Media Query for tablets and mobile phones */
+@media (max-width: 768px) {
+  /* --- Navbar for Mobile --- */
+  .navbar .nav-links {
+    display: none; /* Hide the links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+  .navbar .nav-links.active {
+    display: flex; /* Show the links when hamburger is clicked */
+  }
+  .navbar ul li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .navbar .hamburger {
+    display: block; /* Show the hamburger icon */
+  }
+
+  /* --- Font & Layout Adjustments --- */
+  .hero h1 {
+    font-size: 2.5rem; /* Reduce heading size on mobile */
+    min-height: auto;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 3rem 0; /* Reduce section spacing */
+  }
+  .subsection {
+    margin-top: 3rem;
+  }
+
+  /* Stack two-column layouts */
+  .about-content,
+  .course-details-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-container,
+  .footer-main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-about,
+  .footer-quick-links,
+  .footer-contact,
+  .footer-social {
+    text-align: center;
+    min-width: 100%;
+    margin-right: 0;
+  }
+  .footer-quote p,
+  .footer-contact p {
+    justify-content: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+
