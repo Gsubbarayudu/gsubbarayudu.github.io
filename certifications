@@ -49,7 +49,7 @@
           >
         </li>
         <li>
-          <a href="certifications.html" class="nav-link active"
+          <a href="/certifications" class="nav-link active"
             ><span class="material-symbols-outlined">workspace_premium</span
             >Certifications</a
           >
@@ -163,4 +163,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
