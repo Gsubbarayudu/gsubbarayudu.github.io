@@ -48,4 +48,12 @@ const studentDatabase = [
     issuer: "Avinash Royal",
     hasCertificate: true, // false = PDF has NOT been uploaded yet
   },
+  {
+    id: "SR26502",
+    name: "M MOULIKA",
+    course: "Machine Learning with AI",
+    date: "31 March, 2026",
+    issuer: "Avinash Royal",
+    hasCertificate: true, // false = PDF has NOT been uploaded yet
+  },
 ];
