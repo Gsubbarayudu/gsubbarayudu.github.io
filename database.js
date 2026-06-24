@@ -696,4 +696,204 @@ const studentDatabase = [
     issuer: "Avinash Royal",
     hasCertificate: true, // false = PDF has NOT been uploaded yet
   },
+  {
+  id: "SR26V01",
+  name: "RACHAPALLE THARUN REDDY",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V02",
+  name: "Gangula Nikhil Reddy",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V03",
+  name: "KALLURU VENKATA NAGA SAHITHI",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V04",
+  name: "ANGALAGUTTI NANDINI",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V05",
+  name: "THATICHERLA MADHUNIKA",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V06",
+  name: "Y RAJASEKHAR",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V07",
+  name: "BUSAGANI CHANDRA",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V08",
+  name: "DHANIKALA PRAVEEN KUMAR YADAV",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V09",
+  name: "Shaik Mohasin Arafath",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V10",
+  name: "KOMMA SUMANTH",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V11",
+  name: "Kundella Ganesh Yadav",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V12",
+  name: "Y V MADHUSUDHANA REDDY",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V13",
+  name: "Kamatham Hari Kishore Reddy",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V14",
+  name: "C SAI LAKSHMI",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V15",
+  name: "DURGAM RIYAZ",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V16",
+  name: "CHOWDAM NALLAKONDAPPAGARI SAI NIRANJAN",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V17",
+  name: "Shaik Ayesha",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V18",
+  name: "Shaik muhammad khalid",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V19",
+  name: "SHAIK ZOYA",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26V20",
+  name: "Korivi Venkata Sai Anish",
+  course: "VLSI",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26C05",
+  name: "Kambam Vidya lakshmi",
+  course: "ARTIFICIAL INTELLIGENCE",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26C06",
+  name: "TAPPA ARSHAD",
+  course: "ARTIFICIAL INTELLIGENCE",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26C07",
+  name: "KHAJAMAINUDDIN S M",
+  course: "ARTIFICIAL INTELLIGENCE",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SR26AI2606",
+  name: "Gajjala Vijaya Lakshmi",
+  course: "ARTIFICIAL INTELLIGENCE",
+  date: "05 JuLY, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
+{
+  id: "SRDS2605",
+  name: "YARRAJUNNUGARI SUNAYANA",
+  course: "DATA SCIENCE",
+  date: "27 June, 2026",
+  issuer: "Avinash Royal",
+  hasCertificate: false, // false = PDF has NOT been uploaded yet
+},
 ];
